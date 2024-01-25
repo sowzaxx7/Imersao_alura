@@ -3,7 +3,7 @@ const playlistContainer = document.getElementById("result-playlists");
 const searchInput = document.getElementById("search-input");
 
 function requestApi(searchTerm) {
-  fetch('.../apis/artist.json')
+  fetch('artist.json')
     .then((response) => response.json())
     .then((data) => {
       const artists = data.artists;
